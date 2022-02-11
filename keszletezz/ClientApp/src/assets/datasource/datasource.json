@@ -1,0 +1,28 @@
+[
+  {
+    "id": "1",
+    "name": "valami",
+    "price": 5,
+    "uom": "4",
+    "quantityPerPackage": 7,
+    "barcode": "vonalkod",
+    "description": "leiras",
+    "categoryId": "3",
+    "imagePath": "",
+    "thumbnailPath": ""
+
+  },
+  {
+    "id": "2",
+    "name": "nemtom",
+    "price": 6,
+    "uom": "7",
+    "quantityPerPackage": 9,
+    "barcode": "nemvonalkod",
+    "description": "leiras",
+    "categoryId": "3",
+    "imagePath": "",
+    "thumbnailPath": ""
+
+  }
+]

@@ -1,0 +1,100 @@
+<div showmobile>
+  <div flexcol gap10>
+    <div flexrow gap10>
+      <!--<button *ngFor="let category of categoryList" flex justifycenter mbox aligncenter (click)="filterList(category)">
+        {{category}}
+      </button>-->
+    </div>
+    <div flexrow gap10>
+      <button flex justifycenter mbox aligncenter (click)="filterList('all')">
+        Összes
+      </button>
+      <button flex justifycenter mbox aligncenter (click)="createProduct()">
+        Új termék
+      </button>
+    </div>
+    <div flexcol *ngFor="let product of filteredProductList">
+      <div flexcol gap10 back-dark padding1rem>
+        <div flex flexrow gap30 justifybetween>
+          <div flexcol>
+            <div flex>Név</div>
+            <div flex>{{product.name}}</div>
+          </div>
+          <div flexcol>
+            <div flex>Vonalkód</div>
+            <div flex>{{product.barcode}}</div>
+          </div>
+        </div>
+        <div flex flexrow gap30 justifybetween>
+          <div flexcol>
+            <div flex>Ár</div>
+            <div flex>{{product.price}} Ft</div>
+          </div>
+          <!--<div flexcol>
+            <div flex>Készlet</div>
+            <div flex>{{product.qtyStock}} db</div>
+          </div>-->
+          <div flexcol>
+            <div flex>Db / doboz</div>
+            <div flex>{{product.quantityPerPackage}}</div>
+          </div>
+        </div>
+      </div>
+      <div flexrow mbox back-dark justifyend aligncenter padding1rem>
+        IKONOK AKCIÓK
+      </div>
+    </div>
+  </div>
+</div>
+<div showtablet shownotebook showmonitor>
+  <div flexcol gap10>
+    <div flexrow gap10>
+      <!--<button *ngFor="let category of categoryList" flex justifycenter mbox aligncenter (click)="filterList(category)">
+        {{category}}
+      </button>-->
+    </div>
+    <div flexcol *ngFor="let product of filteredProductList">
+      <div flexrow xlbox back-dark aligncenter>
+        <div flex padding1rem>
+          <div flexcol>
+            <div flex>Név</div>
+            <div flex>{{product.name}}</div>
+          </div>
+        </div>
+        <div flex2>
+          <div flexcol>
+            <div flex>Leírás</div>
+            <div flex>{{product.description}}</div>
+          </div>
+        </div>
+        <div flex>
+          <div flexcol>
+            <div flex>Vonalkód</div>
+            <div flex>{{product.barcode}}</div>
+          </div>
+        </div>
+        <div flex>
+          <div flexcol>
+            <div flex>Ár</div>
+            <div flex>{{product.price}} Ft</div>
+          </div>
+        </div>
+        <div flex>
+          <!--<div flexcol>
+            <div flex>Készlet</div>
+            <div flex>{{product.quantityPerPackage}}</div>
+          </div>-->
+        </div>
+        <div flex>
+          <div flexcol>
+            <div flex>Db / doboz</div>
+            <div flex>{{product.quantityPerPackage}}</div>
+          </div>
+        </div>
+      </div>
+      <div flexrow mbox back-dark justifyend aligncenter padding1rem>
+        IKONOK AKCIÓK
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,231 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Provide sufficient contrast against white background */
+
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+}
+a {
+  color: #0366d6;
+}
+
+code {
+  color: #e01a76;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+/*Flex-layout*/
+
+[flex] {
+    display: flex;
+    flex: 1;
+}
+
+[flex2] {
+  display: flex;
+  flex: 2;
+}
+[flexauto] {
+    display: flex;
+    flex: auto;
+}
+
+[flexrow] {
+    display: flex;
+    flex-direction: row;
+}
+
+[flexcol] {
+  display: flex;
+  flex-direction: column;
+}
+
+[wrap] {
+    flex-wrap: wrap;
+}
+[gap10] {
+  gap: 10px;
+}
+[gap30] {
+    gap: 30px;
+}
+/*Flex-alignment*/
+[aligncenter] {
+  align-items: center;
+}
+
+[justifystart] {
+  justify-content: flex-start;
+}
+
+[justifycenter] {
+    justify-content: center;
+}
+
+[justifyend] {
+  justify-content: flex-end;
+}
+
+[justifybetween] {
+  justify-content: space-between;
+}
+
+[justifyaround] {
+  justify-content: space-around;
+}
+
+[textcenter] {
+  text-align: center;
+}
+
+/*containers - boxes*/
+
+[screencontainer] {
+    max-height: 100vh;
+}
+
+[mbox] {
+  height: 3rem;
+}
+
+[lbox] {
+  height: 6rem;
+}
+
+[xlbox] {
+    height: 12rem;
+}
+
+[xxlbox] {
+  height: 24rem;
+}
+/*backgrounds*/
+
+[back-dark] {
+    background-color: darkgrey;
+}
+
+/*paddings*/
+
+[padding1rem] {
+    padding: 1rem;
+}
+
+/*-----------------------------------MEDIA-----------------------------*/
+/* mobile */
+@media only screen and (max-width: 600px) {
+  [showmobile] {
+    display: block;
+  }
+  [showportraittablet] {
+      display: none;
+  }
+  [showtablet] {
+    display: none;
+  }
+  [shownotebook] {
+    display: none;
+  }
+  [showmonitor] {
+    display: none;
+  }
+}
+
+/* portrait tablet */
+@media only screen and (min-width: 600px) {
+  [showmobile] {
+    display: none;
+  }
+  [showportraittablet] {
+    display: block;
+  }
+  [showtablet] {
+    display: none;
+  }
+
+  [shownotebook] {
+    display: none;
+  }
+
+  [showmonitor] {
+    display: none;
+  }
+}
+
+/* tablet */
+@media only screen and (min-width: 768px) {
+  [showmobile] {
+    display: none;
+  }
+
+  [showportraittablet] {
+    display: none;
+  }
+
+  [showtablet] {
+    display: block;
+  }
+  [shownotebook] {
+    display: none;
+  }
+
+  [showmonitor] {
+    display: none;
+  }
+}
+
+/* notebook */
+@media only screen and (min-width: 992px) {
+  [showmobile] {
+    display: none;
+  }
+
+  [showportraittablet] {
+    display: none;
+  }
+
+  [showtablet] {
+    display: none;
+  }
+
+  [shownotebook] {
+    display: block;
+  }
+
+  [showmonitor] {
+    display: none;
+  }
+
+}
+
+/* monitor */
+@media only screen and (min-width: 1200px) {
+  [showmobile] {
+    display: none;
+  }
+
+  [showportraittablet] {
+    display: none;
+  }
+
+  [showtablet] {
+    display: none;
+  }
+
+  [shownotebook] {
+    display: none;
+  }
+
+  [showmonitor] {
+    display: block;
+  }
+
+}
