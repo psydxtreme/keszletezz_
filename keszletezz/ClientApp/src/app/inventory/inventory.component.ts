@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { InitService } from '../init.service';
+import { Inventory } from '../_models/models';
 
 @Component({
   selector: 'app-inventory',
@@ -6,10 +8,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./inventory.component.css']
 })
 export class InventoryComponent implements OnInit {
+  inventoryList: Inventory[];
 
-  constructor() { }
+  constructor(private initservice: InitService) { }
 
   ngOnInit() {
+    this.inventoryList = this.initservice.inventoryList;
   }
 
 }

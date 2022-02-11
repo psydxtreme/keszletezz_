@@ -20,7 +20,7 @@ export class ProductListComponent implements OnInit {
   constructor(private initservice: InitService) { }
 
   ngOnInit() {
-    this.productList = this.initservice.products;
+    this.productList = this.initservice.productList;
     this.filteredProductList = this.productList;
     //  this.categoryList = Array.from(new Set(this.categoryList.map(e => e.category)));
     //}

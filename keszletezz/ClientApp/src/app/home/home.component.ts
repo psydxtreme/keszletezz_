@@ -12,4 +12,8 @@ export class HomeComponent {
   termek() {
     this.router.navigate(['/termek-lista']);  
   }
+
+  raktar() {
+    this.router.navigate(['/raktar']);
+  }
 }

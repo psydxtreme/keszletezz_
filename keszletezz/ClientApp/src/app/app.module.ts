@@ -26,7 +26,8 @@ import { InventoryComponent } from './inventory/inventory.component';
     FormsModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
-      { path: 'termek-lista', component: ProductListComponent}
+      { path: 'termek-lista', component: ProductListComponent },
+      { path: 'raktar', component: InventoryComponent }
     ])
   ],
   providers: [],
